@@ -527,7 +527,8 @@ private[deploy] class SparkSubmitArguments(args: Seq[String], env: Map[String, S
         |  --driver-cores NUM          Number of cores used by the driver, only in cluster mode
         |                              (Default: 1).
         |  --queue QUEUE_NAME          The YARN queue to submit to (Default: "default").
-        |  --num-executors NUM         Number of executors to launch (Default: 2).
+        |  --num-executors NUM         Number of executors to launch (Default: 2　in both
+        |                              YARN mode and standalone mode).
         |  --archives ARCHIVES         Comma separated list of archives to be extracted into the
         |                              working directory of each executor.
         |  --principal PRINCIPAL       Principal to be used to login to KDC, while running on
